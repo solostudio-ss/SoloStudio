@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Studio - Forjando Realidades</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">Solo Studio</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#estudio">El Manifiesto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>CREANDO MUNDOS SIN LÍMITES</h1>
+                <p>Donde la arquitectura de software se encuentra con el arte digital.</p>
+                <a href="#juegos" class="btn-cta">¡Explorar!</a>
+            </div>
+        </section>
+
+        <section id="juegos" class="games-section section-padding">
+            <h2 class="section-title">Nuestras Creaciones</h2>
+            <div class="games-grid">
+                <article class="game-card reveal">
+                    <div class="card-img-container">
+                        <img src="./assets/the magic cat portada.png" alt="The Magic Cat Cover" class="game-cover">
+                    </div>
+                    <h3>The Magic Cat</h3>
+                    <p>Un felino místico debe salvar el Bosque de Cristal de las sombras carmesí.</p>
+                    <a href="#" class="btn-card">Explorar Mundo</a>
+                </article>
+
+                <article class="game-card reveal upcoming">
+                    <div class="upcoming-placeholder">
+                        <span class="pixel-icon">?</span>
+                    </div>
+                    <h3>PRÓXIMAMENTE</h3>
+                    <p>Una nueva dimensión está siendo codificada. El portal se abrirá pronto.</p>
+                    <button class="btn-card disabled" disabled>Bloqueado</button>
+                </article>
+
+                <article class="game-card reveal upcoming">
+                    <div class="upcoming-placeholder">
+                        <span class="pixel-icon">?</span>
+                    </div>
+                    <h3>PRÓXIMAMENTE</h3>
+                    <p>Explorando mecánicas desconocidas. Mantén tu pergamino listo.</p>
+                    <button class="btn-card disabled" disabled>Bloqueado</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="estudio" class="section-padding">
+            <h2 class="section-title">El Manifiesto</h2>
+            <div class="manifesto-block reveal">
+                <div class="block-content">
+                    <p>"Creemos que un juego no es solo código, es un puente entre mundos. Cada experiencia es un ecosistema vivo diseñado para desafiar los sentidos."</p>
+                </div>
+                <div class="block-image">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500" alt="Arte de Juego">
+                </div>
+            </div>
+
+            <div class="player-dedication reveal">
+                <div class="player-card">
+                    <h3 class="gold-text">PARA TI, JUGADOR</h3>
+                    <p>"No importa cuántas veces caigas frente al jefe final o cuántos caminos sin salida encuentres. En Solo Studio, cada derrota es una lección y cada victoria es un triunfo compartido."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section section-padding">
+            <div class="contact-form-container">
+                <h2 class="section-title">Envía un Pergamino</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Tu Nombre</label>
+                        <input type="text" id="name" placeholder="Ej. Sir Lancelot" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="aventurero@solostudio.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="5" placeholder="¿Qué aventuras tienes en mente?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Sellar y Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2026 Solo Studio. Engineering Emotions.</p>
+    </footer>
+
+    <div id="custom-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-border-shadow">
+                <h2 id="modal-title">SISTEMA</h2>
+                <p id="modal-message">Contenido...</p>
+                <button id="modal-close" class="btn-cta">ACEPTAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
